@@ -29,7 +29,7 @@ Array.from(buttons).forEach((button) =>{
              string.indexOf("(") == -1 ||
              string.indexOf("(") != -1 &&
              string.indexOf(")") != -1 &&
-             string.indexOf("(") < string.lastIndexOf(")")) 
+             string.lastIndexOf("(") < string.lastIndexOf(")")) 
              
              {
                 string += "(";
@@ -39,7 +39,7 @@ Array.from(buttons).forEach((button) =>{
                 string.indexOf(")") == -1 ||
                 string.indexOf("(") != -1 &&
                 string.indexOf(")") != -1 &&
-                string.indexOf("(") > string.lastIndexOf(")")) 
+                string.lastIndexOf("(") > string.lastIndexOf(")")) 
             {
                 string += ")";
                 
@@ -50,7 +50,6 @@ Array.from(buttons).forEach((button) =>{
         }
         
     else{
-    console.log(e.target);
     string = string + e.target.innerHTML;
     document.querySelector('.disp').value = string;}
     })

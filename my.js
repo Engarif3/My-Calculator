@@ -24,7 +24,31 @@ Array.from(buttons).forEach((button) =>{
         document.querySelector('.disp').value = string;
     }
 
-    
+    else if(e.target.innerHTML == '()'){
+        if  ( 
+             string.indexOf("(") == -1 ||
+             string.indexOf("(") != -1 &&
+             string.indexOf(")") != -1 &&
+             string.indexOf("(") < string.lastIndexOf(")")) 
+             
+             {
+                string += "(";
+                
+             } else if(
+                string.indexOf("(") != -1 &&
+                string.indexOf(")") == -1 ||
+                string.indexOf("(") != -1 &&
+                string.indexOf(")") != -1 &&
+                string.indexOf("(") > string.lastIndexOf(")")) 
+            {
+                string += ")";
+                
+            }
+
+          document.querySelector('.disp').value = string;
+             
+        }
+        
     else{
     console.log(e.target);
     string = string + e.target.innerHTML;

@@ -23,6 +23,7 @@ body{
     border-radius: 4px;
     display: inline;
     font-style: italic;
+    font-family: "Roboto", sans-serif;
  }
 
  h4{
@@ -49,7 +50,8 @@ body{
     margin-bottom: 25px;
     border-radius: 5px;
     background-color: rgb(212, 198, 198);
-    
+    font-size:x-large;
+    text-align: center;  
     
 }
 

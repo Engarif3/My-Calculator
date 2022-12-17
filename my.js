@@ -9,7 +9,7 @@ Array.from(buttons).forEach((button) =>{
         document.querySelector('.disp').value = string;
     }
 
-    else if(e.target.innerHTML == 'CLEAR'){
+    else if(e.target.innerHTML == 'CLR'){
         string = "";
         document.querySelector('.disp').value = string;
     }

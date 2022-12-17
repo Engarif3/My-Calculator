@@ -9,8 +9,13 @@ Array.from(buttons).forEach((button) =>{
         document.querySelector('.disp').value = string;
     }
 
-    else if(e.target.innerHTML == 'DEL'){
+    else if(e.target.innerHTML == 'CLEAR'){
         string = "";
+        document.querySelector('.disp').value = string;
+    }
+
+    else if(e.target.innerHTML == 'DEL'){
+        string = string.slice(0, -1);
         document.querySelector('.disp').value = string;
     }
 
